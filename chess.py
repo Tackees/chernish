@@ -568,11 +568,7 @@ class Queen(Figures):
         """
         return Rook(self.column, self.row, self.field).can_step(c, r) or Bishop(self.column, self.row, self.field).can_step(c, r)
 
-field = Board().start_board()
-Board().print_board(field)
-print(Figures('E', 8, field).auto_step('D', 7))
 
-'''
 def main():
     """Основная функция для запуска шахматной игры."""
     count_step = 0
